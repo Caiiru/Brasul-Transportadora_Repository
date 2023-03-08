@@ -1,0 +1,13 @@
+/*li::before { content: '\1F85E'; margin-left: -20px; margin-right:10px ; } */
+ul{ 
+    margin-left: 40px;
+    list-style: none;
+
+}
+li { 
+    /*background-image: url('./../../assets/clock-icon.png') no-repeat;*/
+    /*list-style-image: url('./../../assets/clock-icon.png' ); */
+    list-style-type: '🕔';
+    padding: 1em 0 0 1rem;
+    
+}
