@@ -4,7 +4,7 @@ import { Block } from '../../components'
 
 const About = () => {
     return (
-        <div className='About'>
+        <div className='About' id='sobre'>
             BRASUL
             <Block title='Transportadora Nova' text='Atendimento atencioso e personalizado com o cliente'/>
             <Block title='Qualificada Para o Sul' text='Somos especializados em garantir sua entrega em toda região Sul'/>

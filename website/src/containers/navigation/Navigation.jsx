@@ -4,7 +4,7 @@ import { Navbar } from './../../components'
 
 const Navigation = () => {
     return (
-        <div className='brasul__site-navigation'>
+        <div className='brasul__site-navigation' id='home'>
             <Navbar />
         </div>
     )

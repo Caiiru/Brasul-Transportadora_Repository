@@ -1,4 +1,77 @@
+/*
 .Image-Header{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+*/
+*{box-sizing: border-box;}
+
+.brasul__site-header-slidershow{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.brasul__site-header-slidershow_fade{
+    display: none;
+}
+.brasul__site-header{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.brasul__site-header-orcamento{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top:-22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transform: 0.6 ease;
+    border-radius: 0 3px 3 px 0 ;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.brasul__site-header-slidershow_numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top:0;
+
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
 }

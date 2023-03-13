@@ -5,7 +5,7 @@ import { About, Middle } from './../../containers'
 
 const Blog = () => {
   return (
-    <div className='brasul__site-body'>
+    <div className='brasul__site'>
         <Header />
         <About />
         <Middle />

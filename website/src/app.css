@@ -1,3 +1,6 @@
-.brasul__site{
+.brasul{
     background-color: var(--color-bg);
+}
+body{
+    margin: 0px;
 }
