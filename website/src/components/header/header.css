@@ -25,7 +25,6 @@
 
 }
 .brasul__site-header-orcamento{
-    background-color: black;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -74,4 +73,45 @@
 }
 .active, .dot:hover{
     background-color: #717171;
+}
+
+.fade{
+    animation-name:fade;
+    animation-duration:1.5s;
+
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slide-container{
+    width: 70%;
+    margin: auto;
+}
+.each-slide >div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-size: cover;
+    height: 800px;
+    width: 20px;
+    margin: auto;
+}
+.each-fade{
+    display: flex;
+
+}
+.each-fade .image-container{
+    width: 75%;
+    overflow: hidden;
+
+}
+
+.each-fade .image-container img{
+    width: 100%;
+}
+.active, .dot:hover{
+    background-color:unset;
+    background-size: contain;
 }
