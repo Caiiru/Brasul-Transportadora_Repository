@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import 'react-slideshow-image/dist/styles.css';
-import { header1, header2 } from './imports.js'
+//import { header1, header2 } from './imports.js'
 import ImageSlider from "./ImageSlider";
 
 const Header = () => {
@@ -30,8 +30,10 @@ const Header = () => {
         <ImageSlider slides={slides} parentWidth={1280} />
 
       </div>
+      <br></br>
+      <br></br>
       <div className='brasul__site-header-orcamento'>
-        <a href="#" class='brasul__site-header-button'>Fazer um Orçamento</a>
+        <a href="#orcamento" class='brasul__site-header-button'>Fazer um Orçamento</a>
       </div>
     </div>
   )

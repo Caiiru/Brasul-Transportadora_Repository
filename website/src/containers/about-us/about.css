@@ -1,0 +1,27 @@
+.brasul__site-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+
+}
+
+.brasul__site-sobre_blocks { 
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.brasul__site-sobre_container{
+    display: flex; 
+    height: 500px;  
+}
+
+.brasul__site-sobre h2 {
+    color: white;
+    font-size: 55px;
+    font-family: var(--font-family);
+}

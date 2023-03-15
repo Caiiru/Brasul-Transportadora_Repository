@@ -5,12 +5,16 @@ const Budget = () => {
   return (
     <div className='brasul__site-budget'>
       <div className='brasul__site-budget-card'>
-        <h2>Whatsapp</h2>
-        <p>Faça um orçamento
-          personalizado via
-          whatsapp</p>
-        <p>ou</p>
-        <button type='button'>Iniciar Conversa</button>
+        <div className='brasul__site-budget-card-container'>
+          <h2>Whatsapp</h2>
+          <p>Faça um orçamento
+            personalizado via
+            whatsapp</p>
+          <p>ou</p>
+          <button type='button'>Iniciar Conversa</button>
+
+        </div>
+
       </div>
       <div className='brasul__site-budget-card'>
         <h2>Email</h2>
@@ -22,7 +26,7 @@ const Budget = () => {
 
       </div>
 
-      <h2>SEGURANÇA E AGILIDADE PARA SUA CARGA</h2>
+
     </div>
   )
 }

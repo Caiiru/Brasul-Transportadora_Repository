@@ -1,3 +1,55 @@
-h3{
+
+
+.brasul__site-container_block-title h3 {
+    width: 100%;
+    font-size: 35px;
     font-family: var(--font-family);
+    color: white;
+}
+
+.brasul__site-container_block-title div {
+
+    width: 500px;
+    height: 11px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #E35720 5.46%, #963F1D 102.1%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0);
+    margin-bottom: 0.25rem;
+    font-size: 25px;
+}
+.brasul__site-container_block-gradient div{
+    
+    width: 500px;
+    height: 11px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #E35720 5.46%, #963F1D 102.1%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0);
+    margin-bottom: 0.25rem;
+    font-size: 25px;
+}
+
+.brasul__site-container_block-content {}
+
+.brasul__site-container_block {
+
+    background: rgba(217, 217, 217, 0.05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+.brasul__site-container_block p{
+    font-size: 25px;
+    color: white;
 }
