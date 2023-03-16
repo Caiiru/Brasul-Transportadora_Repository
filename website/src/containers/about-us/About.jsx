@@ -5,7 +5,7 @@ import { Block } from '../../components'
 const About = () => {
     return (
         <div className='brasul__site-sobre' id='sobre'>
-            <h2>Brasul</h2>
+            <h2>Sobre a Brassul</h2>
             <div className='brasul__site-sobre_container'>
                 <div className='brasul__site-sobre_blocks'>
                     <Block title='Transportadora Nova' text='Atendimento atencioso e personalizado com o cliente' />
