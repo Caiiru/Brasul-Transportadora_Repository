@@ -1,23 +1,10 @@
 import React from 'react'
 import './budget.css'
-import { qrcode } from './import.js';
+import { qrcode } from './import.js'; //imagem
 import { useState } from 'react';
+import FormSubmit from './FormSubmit.js'
 
 const Budget = () => {
-
-  const [campos, setCampos] = useState({
-    email:'',
-    mensagem:''
-  })
-
-  function handleInputChange(event){
-    campos[event.target.name] = event.target.value;
-    setCampos(campos);
-  }
-  function handleFormSubmit(event){
-    event.preventDefault();
-    console.log(campos);
-  }
 
   return (
     <div className='brasul__site-budget' id='orcamento'>
@@ -36,22 +23,61 @@ const Budget = () => {
                 Iniciar Conversa</a>
             </div>
           </div>
-
         </div>
+
+        {/* CARD DE EMAIL */}
         <div className='brasul__site-budget-card'>
-          <div className='brasul__site-budget-card-title'>
-            <h2>Email</h2>
-            <input type='email' class='brasul__site-budget-email' size={30} placeholder='Seu Email' autoComplete='on' />
-          </div>
-          <br></br>
-          <div className='brasul__site-budget-email-description_title'>
-            <p>Descreva seu pedido</p>
+          {/* form start */}
+          <form className='form'
+            data-form
+            action="" >
+            <div className='brasul__site-budget-card-title'>
+              <h2>Email</h2>
+              <input type='text'
+                class='brasul__site-budget-email'
+                name='nome'
+                id='nome'
+                size={30}
+                placeholder='Seu Nome'
 
-            <textarea name='message' className='brasul__site-budget-email-description' id='message' size={30} cols={30} rows='7' placeholder='Descrição do pedido'></textarea>
+                required
+              />
+              <br></br>
+              <input type='email'
+                class='brasul__site-budget-email'
+                name='email'
+                id='email'
+                size={30}
+                placeholder='Seu Email'
+                autoComplete='on'
+                required
+              />
+            </div>
+            <br></br>
+            <div className='brasul__site-budget-email-description_title'>
+              <p>Descreva seu pedido</p>
 
-          </div>
-          <br></br>
-          <a class='wppButton'>Enviar Email</a>
+              <textarea name='mensagem'
+                className='brasul__site-budget-email-description'
+                id='mensagem'
+                size={30}
+                cols={30}
+                rows='7'
+                maxLength={600}
+                placeholder='Descrição do pedido'
+                required
+              >
+              </textarea>
+              <br></br>
+            </div>
+            <button
+              className='wppButton'
+              type='submit'
+              data-button
+            >
+              Enviar Email
+            </button>
+          </form>
 
         </div>
 
