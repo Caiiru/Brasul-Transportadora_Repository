@@ -26,7 +26,7 @@ const Header = () => {
 
 
     <div className='brasul__site-header'>
-      <div className='newSlider' style={containerStyles}>
+      <div className='newSlider'  >
         <ImageSlider slides={slides} parentWidth={1280} />
 
       </div>

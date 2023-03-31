@@ -1,0 +1,98 @@
+.section__padding {
+  padding-top: 4rem;
+}
+
+.brasul__site-footer {
+  font-family: var(--font-family);
+  color: white;
+  display: flex;
+  background-color: #0f193d;
+  justify-content: space-around;
+  height: 300px;
+  align-items: center;
+}
+
+.brasul__site-footer_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.brasul__site-footer-links-logo img {
+  width: 350px;
+}
+
+.brasul__site-footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  text-align: left;
+}
+
+.brasul__site-footer-links div {
+  width: 250px;
+  margin: 1rem;
+}
+
+.brasul__site-footer-links_div {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+
+  
+}
+
+.brasul__site-footer-links_div button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.brasul__site-footer-links_div button:hover a {
+  font-size: 1.3em;
+  transition: font-size 0.3s ease-in-out;
+  color: rgb(250, 180, 51);
+}
+
+.brasul__site-footer-links_div button+button {
+  margin-left: 1rem;
+}
+
+.brasul__site-footer-links_div .icon {
+  margin-right: 5px;
+}
+
+.brasul__site-footer-links_div a {
+  text-decoration: none;
+  color: white;
+}
+ 
+.brasul__site-footer-links_div-container{
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+@media screen and (max-width:1024px){
+    .brasul__site-footer{
+      height: auto;
+    }
+    .brasul__site-footer-links{
+      flex-wrap: nowrap;
+    }
+    .brasul__site-footer-links-logo img{
+      width: 200px;
+    }
+}

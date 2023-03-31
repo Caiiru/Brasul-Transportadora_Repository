@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
+
 const slideStyles = {
   width: "100%",
   height: "100%",
@@ -56,7 +57,8 @@ const slidesContainerStyles = {
 const slidesContainerOverflowStyles = {
   overflow: "hidden",
   height: "100%",
-  width:'1280px', //tamanho das imagens dentro do canvas
+  width: "100%",
+  borderRadius:'20px',
 };
 
 const ImageSlider = ({ slides, parentWidth }) => {
@@ -67,6 +69,21 @@ const ImageSlider = ({ slides, parentWidth }) => {
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
+
+  function useViewportWidth() {
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  
+    useEffect(() => {
+      function handleResize() {
+        setViewportWidth(window.innerWidth);
+      }
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
+    return viewportWidth;
+  }
+  
   const goToNext = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
@@ -78,7 +95,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
   const getSlideStylesWithBackground = (slideIndex) => ({
     ...slideStyles,
     backgroundImage: `url(${slides[slideIndex].url})`,
-    width: `${parentWidth}px`,
+    width: `${Math.min(parentWidth)}px`,
   });
   const getSlidesContainerStylesWithWidth = () => ({
     ...slidesContainerStyles,
@@ -96,7 +113,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
 
     return () => clearTimeout(timerRef.current);
   }, [goToNext]);
-
+ 
   return (
     <div style={sliderStyles}>
       <div>

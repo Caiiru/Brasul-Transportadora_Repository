@@ -1,17 +1,20 @@
-.brasul__site-budget{
+.brasul__site-budget {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-gap: 1rem;
-    color:white;
+    color: white;
     flex-direction: column;
     margin: 1rem 1rem 1rem 1rem;
     box-shadow: 2px 1px 12px 0 #000000;
+    background-color: #293a6d;
 
 }
-.brasul__site-budget h2{
+
+.brasul__site-budget h2 {
     font-size: 50px;
 }
+
 .brasul__site-budget-container {
     flex: 1;
     display: flex;
@@ -34,7 +37,8 @@
     border-radius: 10px;
     font-family: var(--font-family);
 }
-.brasul__site-budget-card-container{
+
+.brasul__site-budget-card-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,26 +46,30 @@
 }
 
 .brasul__site-budget-card h2 {
- 
-    font-size: 40px; 
+
+    font-size: 40px;
     font-weight: 700px;
     line-height: 48px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.brasul__site-budget-card p{
-     
+
+.brasul__site-budget-card p {
+
     font-size: 18px;
     text-align: center;
     display: block;
     font-family: var(--font-family);
 }
-.brasul__site-budget-card-links a{
+
+.brasul__site-budget-card-links a {
     color: white;
 }
-.brasul__site-budget-card-links{
+
+.brasul__site-budget-card-links {
     align-items: center;
     justify-content: center;
 }
+
 .wppButton {
     background: #43F63D;
     background-image: -webkit-linear-gradient(top, #43F63D, #5EF77D);
@@ -86,9 +94,9 @@
     display: inline-block;
     cursor: pointer;
     text-align: center;
- }
- 
- .wppButton:hover {
+}
+
+.wppButton:hover {
     border: solid #007E0E 1px;
     background: #57AF69;
     background-image: -webkit-linear-gradient(top, #57AF69, #57AF69);
@@ -100,8 +108,9 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
- }
- .brasul__site-budget-email{
+}
+
+.brasul__site-budget-email {
     display: block;
     width: 330px;
     padding: 0.375rem 0.75rem;
@@ -115,9 +124,10 @@
     border: var(--bs-border-width) solid var(--bs-border-color);
     appearance: none;
     border-radius: 0.375rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
- }
- .brasul__site-budget-email-description{
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.brasul__site-budget-email-description {
     display: block;
     width: 330px;
     height: 220px;
@@ -132,44 +142,71 @@
     border: var(--bs-border-width) solid var(--bs-border-color);
     appearance: none;
     border-radius: 0.375rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     resize: none;
- }
- .brasul__site-budget-email-description_title{  
+}
+
+.brasul__site-budget-email-description_title {
     text-align: start;
     justify-content: end;
     align-items: start;
     display: flex;
     flex-direction: column;
- }
- .brasul__site-budget-card-title{
+}
+
+.brasul__site-budget-card-title {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 
- }
- p{
+}
+
+p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
+}
 
- form{
+form {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 
- }
+}
+
 .success,
 .error {
-  text-align: center;
+    text-align: center;
 }
 
 
 .success {
-  color: greenyellow;
+    color: rgb(255, 255, 255);
 }
 
 .error {
-  color: tomato;
+    color: rgb(255, 255, 255);
+
+}
+
+.brasul__site-budget-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1024px) {
+    .wppButton {     
+        font-size: 20px;
+        font-weight: 54;
+        padding: 25px;
+        -webkit-box-shadow: 2px 1px 12px 0 #000000;
+        -moz-box-shadow: 2px 1px 12px 0 #000000;
+        box-shadow: 2px 1px 12px 0 #000000;
+        text-shadow: 1px 1px 20px #000000;
+        border: solid #007E0E 1px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+    }
 }

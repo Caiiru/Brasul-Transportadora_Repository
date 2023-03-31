@@ -3,9 +3,16 @@ import './budget.css'
 import { qrcode } from './import.js'; //imagem
 import { useState } from 'react';
 import FormSubmit from './FormSubmit.js'
+import Form from './Form';
+
+const formSubmit = new FormSubmit({
+  url: 'http://localhost:3001/formulario',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
 
 const Budget = () => {
-
   return (
     <div className='brasul__site-budget' id='orcamento'>
       <h2>Orçamento</h2>
@@ -28,61 +35,12 @@ const Budget = () => {
         {/* CARD DE EMAIL */}
         <div className='brasul__site-budget-card'>
           {/* form start */}
-          <form className='form'
-            data-form
-            action="" >
-            <div className='brasul__site-budget-card-title'>
-              <h2>Email</h2>
-              <input type='text'
-                class='brasul__site-budget-email'
-                name='nome'
-                id='nome'
-                size={30}
-                placeholder='Seu Nome'
-
-                required
-              />
-              <br></br>
-              <input type='email'
-                class='brasul__site-budget-email'
-                name='email'
-                id='email'
-                size={30}
-                placeholder='Seu Email'
-                autoComplete='on'
-                required
-              />
-            </div>
-            <br></br>
-            <div className='brasul__site-budget-email-description_title'>
-              <p>Descreva seu pedido</p>
-
-              <textarea name='mensagem'
-                className='brasul__site-budget-email-description'
-                id='mensagem'
-                size={30}
-                cols={30}
-                rows='7'
-                maxLength={600}
-                placeholder='Descrição do pedido'
-                required
-              >
-              </textarea>
-              <br></br>
-            </div>
-            <button
-              className='wppButton'
-              type='submit'
-              data-button
-            >
-              Enviar Email
-            </button>
-          </form>
-
+          <Form />
         </div>
 
       </div>
       <br></br><br></br>
+      
     </div>
   )
 }

@@ -1,7 +1,7 @@
 .brasul__site-navigation_navbar {
-    
+
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
     padding: 0.5rem 1rem;
@@ -53,7 +53,7 @@
     font-family: var(--font-family);
 
     font-weight: 100;
-    
+
     margin-top: 10px;
     line-height: 25px;
     text-transform: capitalize;
@@ -62,25 +62,92 @@
 
     cursor: pointer;
 }
-.brasul__site-navigation_navbar_links-container a{
+
+.brasul__site-navigation_navbar_links-container a {
     text-decoration: none;
     margin-left: 4rem;
 }
-.brasul__site-navigation_navbar_links-container a:link{
-    color: black;
-}.brasul__site-navigation_navbar_links-container a:visited{
+
+.brasul__site-navigation_navbar_links-container a:link {
     color: black;
 }
-.brasul__site-navigation_navbar_links-container a:hover{
+
+.brasul__site-navigation_navbar_links-container a:visited {
+    color: black;
+}
+
+.brasul__site-navigation_navbar_links-container a:hover {
     color: rgb(110, 88, 54);
 }
-.brasul__site-navigation_navbar_links-container a:active{
+
+.brasul__site-navigation_navbar_links-container a:active {
     color: rgb(111, 0, 255);
 }
-.navbar.fixed{
+
+.navbar.fixed {
     padding: 1rem 6rem;
     position: fixed;
     transform: .3s;
 
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .brasul__site-navigation_navbar_links-container a {
+
+        margin-left: 0.5rem;
+    }
+
+    .brasul__site-navigation_navbar-links_logo {
+        margin-right: 0.5rem;
+
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 150px;
+    }
+
+    .brasul__site-navigation_navbar_links-container p {
+        color: black;
+        font-size: 28px;
+        margin-right: 3rem;
+        font-family: var(--font-family);
+
+        font-weight: 100;
+
+        margin-top: 10px;
+        line-height: 25px;
+
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    .brasul__site-navigation_navbar_links-container a {
+        margin-left: 0rem;
+    }
+
+    .brasul__site-navigation_navbar-links_logo {
+        margin-right: 0.5rem;
+
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 150px;
+    }
+
+    .brasul__site-navigation_navbar_links-container p {
+        color: black;
+        font-size: 28px;
+        margin-right: 2rem;
+        font-family: var(--font-family);
+
+        font-weight: 100;
+
+        margin-top: 10px;
+        line-height: 25px;
+
+    }
 
 }
