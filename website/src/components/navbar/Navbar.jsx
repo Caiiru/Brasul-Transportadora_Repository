@@ -1,22 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { logo } from './imports.js'
+import { FaBars } from 'react-icons/fa';
+import { RiCloseLine } from 'react-icons/ri';
 
-const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
+function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-  function setFixed() {
-    if (window.scrollY > 200) {
-      setSticky(true);
-    }
-    else {
-      setSticky(false);
-    }
-  }
-  //window.addEventListener('scroll', setFixed)
   return (
-    <header>
-      <nav className={sticky ? 'navbar fixed' : 'brasul__site-navigation_navbar'}>
+    <header className='brassul_header'>
+      <nav className={'brasul__site-navigation_navbar'}>
         <div className='brasul__site-navigation_navbar'>
           <div className='brasul__site-navigation_navbar-links_logo'>
             <img src={logo} alt='logo' />
@@ -29,10 +22,24 @@ const Navbar = () => {
               <p><a href="#contato">Contato</a></p>
             </div>
           </div>
-
+          <div className='menu'>
+            {toggleMenu
+              ? <RiCloseLine color='#fff' size={30} onClick={() => setToggleMenu(false)} />
+              : <FaBars color='#fff' size={40} onClick={() => setToggleMenu(true)} />}
+            {toggleMenu && (
+              <div className='brasul_navbar-menu_container scale-up-center'>
+                <div className='brasul_navba-menu_container-links'>
+                  <p><a href="#home">Início</a></p>
+                  <p><a href="#sobre">Sobre</a></p>
+                  <p><a href="#orcamento">Orçamento</a></p>
+                  <p><a href="#contato">Contato</a></p>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </nav>
-    </header>
+    </header >
   )
 }
 

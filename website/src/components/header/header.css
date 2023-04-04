@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 1024px) {
 	.brasul__site-header-slidershow {
-		max-width: 800px;
+		max-width: 90%px;
 	}
 
 	.brasul__site-header-orcamento {
@@ -135,5 +135,10 @@
 	.newSlider {
 		width: 400px;
 		height: 300px;
+	}
+}
+@media screen and (max-width: 1360px){
+	.newSlider{
+		width: 90%;
 	}
 }
