@@ -22,12 +22,13 @@ const Header = () => {
     margin: " 0 auto",
 
   }
+  var viewport_width = window.innerWidth;
   return (
 
 
     <div className='brasul__site-header'>
       <div className='newSlider'  >
-        <ImageSlider slides={slides} parentWidth={1280} />
+        <ImageSlider slides={slides} parentWidth={viewport_width} />
 
       </div>
       <br></br>

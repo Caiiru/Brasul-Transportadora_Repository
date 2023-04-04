@@ -33,7 +33,7 @@ const leftArrowStyles = {
 
 const sliderStyles = {
   position: "relative",
-  width:'100%',
+  width: '100%',
   height: "100%",
 };
 
@@ -58,7 +58,7 @@ const slidesContainerOverflowStyles = {
   overflow: "hidden",
   height: "100%",
   width: "100%",
-  borderRadius:'20px',
+  borderRadius: '20px',
 };
 
 const ImageSlider = ({ slides, parentWidth }) => {
@@ -70,20 +70,22 @@ const ImageSlider = ({ slides, parentWidth }) => {
     setCurrentIndex(newIndex);
   };
 
-  function useViewportWidth() {
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  
-    useEffect(() => {
-      function handleResize() {
-        setViewportWidth(window.innerWidth);
-      }
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-  
-    return viewportWidth;
-  }
-  
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener('resize', handleResize);
+  }, []); 
+
+
+
   const goToNext = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
@@ -95,12 +97,12 @@ const ImageSlider = ({ slides, parentWidth }) => {
   const getSlideStylesWithBackground = (slideIndex) => ({
     ...slideStyles,
     backgroundImage: `url(${slides[slideIndex].url})`,
-    width: `${Math.min(parentWidth)}px`,
+    width: `${Math.min(windowSize.width)}px`,
   });
   const getSlidesContainerStylesWithWidth = () => ({
     ...slidesContainerStyles,
-    width: parentWidth * slides.length,
-    transform: `translateX(${-(currentIndex * parentWidth)}px)`,
+    width: windowSize.width * slides.length,
+    transform: `translateX(${-(currentIndex * Math.min(windowSize.width))}px)`,
   });
 
   useEffect(() => {
@@ -113,7 +115,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
 
     return () => clearTimeout(timerRef.current);
   }, [goToNext]);
- 
+
   return (
     <div style={sliderStyles}>
       <div>
