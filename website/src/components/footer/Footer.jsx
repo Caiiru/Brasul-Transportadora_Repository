@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <div className='section__padding'>
       <div className='brasul__site-footer' id='contato'>
+        <div className='brasul__site-footer-links-logo'>
+          {/*Logo Brassul*/}
+          <img src={logo} alt='Logo Brasul' />
+        </div>
         <div className='brasul__site-footer-links'>
-          <div className='brasul__site-footer-links-logo'>
-            {/*Logo Brassul*/}
-            <img src={logo} alt='Logo Brasul' />
-          </div>
           <div className='brasul__site-footer-links_div'>
             <h4>Fazer Orçamento</h4>
             <div className='brasul__site-footer-links_div-container'>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <a href='mailto:contato@brasul.com.br'>
                   <FaEnvelope /> Email
                 </a>
-              </button> 
+              </button>
             </div>
           </div>
         </div>

@@ -35,17 +35,35 @@ li {
     height: 800px;
 }
 .brasul__site-middle_content img{
-    width: 35%;
+    width: 40%; 
+}
+@media screen and (max-width:530px){
+    .brasul__site-middle_title h2{
+        font-size: 30px;
+    }
+    .brasul__site-middle_content{
+        padding: 40px 0px 0px 0px;
+        height: 100%;
+    }
+    li{
+        font-size: 16px;
+    }
+    ol, ul{ 
+        margin-left: 0px;
+    }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (min-width: 531px) and (max-width:1024px){
     .brasul__site-middle_title h2{
-        font-size: 42px; 
+        font-size: 35px; 
     }
     li { 
         padding: 1em 0 0 1rem;
-        font-size: 24px; 
+        font-size:20px; 
         
+    }
+    ol, ul{ 
+        margin-left: 0px;
     }
     .brasul__site-middle_content{ 
         height: 500px;

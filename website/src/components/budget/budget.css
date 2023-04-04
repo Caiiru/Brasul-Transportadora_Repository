@@ -195,7 +195,7 @@ form {
 }
 
 @media screen and (max-width:1024px) {
-    .wppButton {     
+    .wppButton {
         font-size: 20px;
         font-weight: 54;
         padding: 25px;
@@ -208,5 +208,60 @@ form {
         display: inline-block;
         cursor: pointer;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .brasul__site-budget h2{
+        font-size: 43px;
+    }
+    .brasul__site-budget-container {
+        flex: auto;
+        flex-direction: column;
+        grid-gap: 1;
+    }.brasul__site-budget-card{
+        width: 90%;
+        height: 100%;
+    }
+    .wppButton{
+        margin-bottom: 10px;
+    }
+    .brasul__site-budget-card h2{
+        font-size: 35px;
+    }
+}
+ 
+@media screen and (max-width: 500px) {
+    .brasul__site-budget-card {
+        width: 100%;
+        height: 80%;
+    }
+    .brasul__site-budget-card h2{
+        font-size: 33px;
+    }
+    .brasul__site-budget-card p{
+        font-size: 15px;
+        margin-block-end: 0px;
+    }
+    .brasul__site-budget-card img{
+        width: 70%;
+    }
+    .wppButton{
+        padding: 13px;
+        font-size: 15px;
+    }
+    .brasul__site-budget-card-links{
+        padding-bottom: 5px;
+    }
+
+    .brasul__site-budget-email-description_title{
+        width: 100%;
+
+    }
+    .brasul__site-budget-email-description_title textarea{
+        width: 100%;
+    }
+    form{
+        padding-bottom: 5px;
     }
 }

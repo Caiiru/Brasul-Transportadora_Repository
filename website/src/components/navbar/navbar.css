@@ -250,7 +250,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width:800px) and (max-width: 1024px) {
     .brasul__site-navigation_navbar_links-container a {
 
         margin-left: 0.5rem;
@@ -280,6 +280,9 @@
 
     .brasul__site-navigation_navbar {
         width: 90%;
+    }
+    .brasul__site-navigation_navbar_links-container{
+        width: 95%;
     }
 }
 
