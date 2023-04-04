@@ -28,7 +28,7 @@ function Navbar() {
               : <FaBars color='#fff' size={40} onClick={() => setToggleMenu(true)} />}
             {toggleMenu && (
               <div className='brasul_navbar-menu_container scale-up-center'>
-                <div className='brasul_navba-menu_container-links'>
+                <div className='brasul_navbar-menu_container-links'>
                   <p><a href="#home">Início</a></p>
                   <p><a href="#sobre">Sobre</a></p>
                   <p><a href="#orcamento">Orçamento</a></p>
