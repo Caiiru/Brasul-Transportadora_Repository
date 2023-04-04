@@ -1,0 +1,144 @@
+/*
+.Image-Header{
+    max-width: 1000px;
+    max-height: 1000px;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+*/
+* {
+	box-sizing: border-box;
+}
+
+.brasul__site-header-slidershow {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.brasul__site-header-slidershow_fade {
+	display: none;
+}
+
+.brasul__site-header {
+	display: block;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.brasul__site-header-orcamento {
+	display: flex;
+	justify-content: center;
+}
+
+.brasul__site-header-button {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0px 1px 0px 0px #fff6af; 
+	border: 1px solid #ffaa22;
+	cursor: pointer;
+	color: #d8d5d5;
+	font-family: var(--font-family);
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #a13c02;
+
+	width: 240px;
+	height: 60px;
+
+	background: #FF5C00;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+}
+
+.brasul__site-header-button:hover {
+
+	background: #e65501;
+}
+
+.brasul__site-header-button:active {
+
+	position: relative;
+	top: 1px;
+}
+
+.newSlider {
+
+	width: 1280px;
+	height: 880px;
+	margin: 0 auto;
+
+}
+
+.slideStyles{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.brasul__site-header-slidershow {
+		max-width: 90%px;
+	}
+
+	.brasul__site-header-orcamento {
+		display: flex;
+	}
+
+	.brasul__site-header-button {
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+	}
+
+	.newSlider {
+		width: 800px;
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.brasul__site-header-button {
+		width: 180px;
+		height: 45px;
+		font-size: 16px;
+	}
+
+	.newSlider {
+		width: 600px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.brasul__site-header-button {
+		width: 150px;
+		height: 40px;
+		font-size: 14px;
+	}
+
+	.newSlider {
+		width: 400px;
+		height: 300px;
+	}
+}
+@media screen and (max-width: 1360px){
+	.newSlider{
+		width: 90%;
+	}
+}

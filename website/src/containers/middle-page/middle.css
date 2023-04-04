@@ -1,0 +1,53 @@
+/*li::before { content: '\1F85E'; margin-left: -20px; margin-right:10px ; } */
+ul{ 
+    margin-left: 40px;
+    list-style: none;
+
+}
+li { 
+    /*background-image: url('./../../assets/clock-icon.png') no-repeat;*/
+    /*list-style-image: url('./../../assets/clock-icon.png' ); */
+    list-style-type: '🕔';
+    padding: 1em 0 0 1rem;
+    font-size: 32px;
+    font-family: var(--font-family);
+    
+}
+.brasul__site-middle_title{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.brasul__site-middle_title h2{
+    font-size: 55px;
+    font-family: var(--font-family);
+}
+
+.brasul__site-middle_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 800px;
+}
+.brasul__site-middle_content img{
+    width: 35%;
+}
+
+@media screen and (max-width:1024px){
+    .brasul__site-middle_title h2{
+        font-size: 42px; 
+    }
+    li { 
+        padding: 1em 0 0 1rem;
+        font-size: 24px; 
+        
+    }
+    .brasul__site-middle_content{ 
+        height: 500px;
+    }
+}

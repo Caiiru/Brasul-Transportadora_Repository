@@ -1,0 +1,250 @@
+.brasul__site-navigation_navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+.Button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 38px;
+    height: 50px;
+
+} 
+
+.brasul__site-navigation_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brasul__site-navigation_navbar-links_logo {
+    margin-right: 2rem;
+    position: relative;
+}
+
+.brasul__site-navigation_navbar-links_logo img {
+    width: 350px;
+}
+
+.brasul__site-navigation_navbar button {
+    color: transparent;
+    width: 174px;
+    height: 33px;
+    left: 513px;
+    top: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    line-height: 24px;
+    width: 200px;
+    cursor: pointer;
+
+
+
+}
+
+.brasul__site-navigation_navbar_links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+
+}
+
+.brasul__site-navigation_navbar_links-container p {
+    color: black;
+    font-size: 33px;
+    margin-right: 4rem;
+    font-family: var(--font-family);
+
+    font-weight: 100;
+
+    margin-top: 10px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+.brasul__site-navigation_navbar_links-container a {
+    text-decoration: none;
+    margin-left: 4rem;
+}
+
+.brasul__site-navigation_navbar_links-container a:link {
+    color: black;
+}
+
+.brasul__site-navigation_navbar_links-container a:visited {
+    color: black;
+}
+
+.brasul__site-navigation_navbar_links-container a:hover {
+    color: rgb(110, 88, 54);
+}
+
+.brasul__site-navigation_navbar_links-container a:active {
+    color: rgb(111, 0, 255);
+}
+
+.navbar.fixed {
+    padding: 1rem 6rem;
+    position: fixed;
+    transform: .3s;
+
+
+}
+
+.brassul_header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 799px) {
+
+    .brasul__site-navigation_navbar_links-container a {
+        margin-left: 0rem;
+    }
+
+    .brasul__site-navigation_navbar-links_logo {
+        margin-right: 0.5rem;
+
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 200px;
+    }
+
+    .brasul__site-navigation_navbar_links-container p {
+        color: black;
+        font-size: 28px;
+        margin-right: 2rem;
+        font-family: var(--font-family);
+
+        font-weight: 100;
+
+        margin-top: 10px;
+        line-height: 25px;
+
+    }
+    .menu {
+        display: flex;
+    }
+    .menu svg{
+        size: 110%;
+    }
+    .brasul__site-navigation_navbar_links-container{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .brasul__site-navigation_navbar {
+        width: 90%;
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .brasul__site-navigation_navbar_links-container a {
+
+        margin-left: 2rem;
+    }
+
+    .brasul__site-navigation_navbar-links_logo {
+        margin-right: 1rem;
+
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 220px;
+    }
+
+    .brasul__site-navigation_navbar_links-container p {
+        color: black;
+        font-size: 30px;
+        font-family: var(--font-family);
+
+        font-weight: 150;
+
+        margin-top: 10px;
+        line-height: 30px;
+
+    }
+
+    .brasul__site-navigation_navbar {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .brasul__site-navigation_navbar_links-container a {
+
+        margin-left: 0.5rem;
+    }
+
+    .brasul__site-navigation_navbar-links_logo {
+        margin-right: 0.5rem;
+
+    }
+
+    .brasul__site-navigation_navbar-links_logo img {
+        width: 200px;
+    }
+
+    .brasul__site-navigation_navbar_links-container p {
+        color: black;
+        font-size: 28px;
+        margin-right: 3rem;
+        font-family: var(--font-family);
+
+        font-weight: 100;
+
+        margin-top: 10px;
+        line-height: 25px;
+
+    }
+
+    .brasul__site-navigation_navbar {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .brasul__site-navigation_navbar_links-container a {
+
+        margin-left: 0.7rem;
+    }
+ 
+}
+@media screen and (max-width:850px){
+    
+    .brasul__site-navigation_navbar_links-container a {
+
+        margin-left: 0.2rem;
+    }
+}
