@@ -1,5 +1,7 @@
 <h1 align="center"> Brassul Transportadora </h1>
+
 ![Badge Em Desenvolvimento React](https://img.shields.io/npm/v/react)
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Brassul Transportadora](https://user-images.githubusercontent.com/54562856/231354311-384064a7-7858-4d72-abe9-e819bb5560d2.png)
 
