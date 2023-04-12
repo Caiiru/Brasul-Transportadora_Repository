@@ -20,12 +20,13 @@ O projeto consiste em uma aplicação React feita desde o zero. Nessa aplicaçã
 -``VsCode``
 
 <En>
+ 
+ ## ✔️ Techniques and technologies used
 First project developed using HTML, CSS, JS and React.
 website for the shipping company Brassul. (brassultransportes.com)
  
  The project consists of a react aplication made from scratch. In  this application, it will be possible to contact the company to request a personalized quote, track your order and soon much more.
  
- ## ✔️ Techniques and technologies used
 -``HTML``
 -``CSS``
 -``JavaScript``
