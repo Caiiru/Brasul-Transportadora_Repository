@@ -5,13 +5,14 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Brassul Transportadora](https://user-images.githubusercontent.com/54562856/231354311-384064a7-7858-4d72-abe9-e819bb5560d2.png)
 
-<PT-BR>
+
+ <PT-BR>
+ ## ✔️ Técnicas e tecnologias utilizadas
+
 Primeiro projeto desenvolvido usando HTML, CSS, JS e React.
 Site para a transportadora Brassul. (brassultransportes.com)
  
 O projeto consiste em uma aplicação React feita desde o zero. Nessa aplicação, será possivel entrar em contato com a transportadora para solicitar um orçamento personalizado, rastrear seu pedido e em breve muito mais.
- 
- ## ✔️ Técnicas e tecnologias utilizadas
 -``HTML``
 -``CSS``
 -``JavaScript``
