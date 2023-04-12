@@ -14,6 +14,7 @@ Primeiro projeto desenvolvido usando HTML, CSS, JS e React.
 Site para a transportadora Brassul. (brassultransportes.com)
  
 O projeto consiste em uma aplicação React feita desde o zero. Nessa aplicação, será possivel entrar em contato com a transportadora para solicitar um orçamento personalizado, rastrear seu pedido e em breve muito mais.
+
 -``HTML``
 -``CSS``
 -``JavaScript``
