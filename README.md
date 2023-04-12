@@ -7,7 +7,8 @@
 
 
  <PT-BR>
- ## ✔️ Técnicas e tecnologias utilizadas
+
+## ✔️ Técnicas e tecnologias utilizadas
 
 Primeiro projeto desenvolvido usando HTML, CSS, JS e React.
 Site para a transportadora Brassul. (brassultransportes.com)
